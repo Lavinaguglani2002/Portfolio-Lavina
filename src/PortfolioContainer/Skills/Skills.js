@@ -85,14 +85,14 @@ export const Skills = () => {
       </div>
 
       <div className="card" style={{ "width": "15rem" }}>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOsqP1ygD_yy-bAlsPVh36nF5-S5uGF-svL6dARsiH_g&s" className="card-img-top" alt="..." />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title ">My Sql</h5>
           <a href="https://www.w3schools.com/mysql/mysql_intro.asp" className="btn btn-primary">Read It</a>
         </div>
       </div>
       <div className="card" style={{ "width": "15rem" }}>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS4UJP8NHuKjQ34J-SqrUsOkUn4LgI4TQwFA3vAtqkvw&s" className="card-img-top" alt="..." />
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" className="card-img-top" />
         <div className="card-body">
           <h5 className="card-title">Github</h5>
           <a href="https://github.com/" className="btn btn-primary">Read It</a>

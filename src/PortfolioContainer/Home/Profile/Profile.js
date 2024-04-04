@@ -37,35 +37,28 @@ const Profile = () => {
           <a href="https://twitter.com/GuglaniLavina"><i className="fab fa-twitter"></i></a>
         </div>
         <div className="profile-text">
-          <h1 style={{"color":"yellow"}}>Hello, I'm <span className="highlighted-text">Lavina</span> <span role="img" aria-label="wave">👋</span></h1>
+          <h1 style={{"color":"yellow","fontSize":"50px","fontFamily":"inherit"}}>Hello, I'm <span className="highlighted-text">Lavina</span> <span role="img" aria-label="wave">👋</span></h1>
           <h2 style={{color:"white"}}>{text}</h2>
-          <p style={{"color":"white"}}>Knack of building applications with frontend and backend operations</p>
-          <p style={{"color":"white"}}>
-          A web developer is a skilled professional responsible for designing, building,
-           and maintaining websites<br/> and web applications.
+          <p style={{"color":"white","fontSize":"20px","fontFamily":"serif"}}>Knack of building applications with frontend and backend operations</p>
+          <p style={{"color":"white","fontSize":"20px"}}>
+            A web developer is a skilled professional responsible for designing, building,
+            and maintaining websites<br/> and web applications.
             They possess expertise in various 
-           programming languages and frameworks,<br/> including HTML, CSS, JavaScript, and popular
-            libraries like React and Angular. 
-
-
-
-
-
+            programming languages and frameworks,<br/> including HTML, CSS, JavaScript, and popular
+            libraries like React and Angular.
           </p>
           <div className="profile-options">
             <a href="Lavina Guglani resume.pdf" download="Lavina Guglani resume.pdf">
+            <button style={{ width: "150px" }} className="btn highlighted-btn">
+  <a href="/Project" style={{ color: "inherit", textDecoration: "none" }}>View Projects</a>
+</button>
+
               <button style={{"width":"150px"}}className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
         </div>
 
         <div className='profile-details-role'>
-  {/* <span className='primary-text'>
-    <h1 style={{ color: 'white', fontSize: "40px" }}>{text}</h1>
-    <span style={{ color: 'white', fontSize: "20px", fontFamily: "cursive" }} className='profile-role-tagline'>
-      knack of building applications with front end and backend operations
-    </span>
-  </span> */}
 
         </div>
       </div>

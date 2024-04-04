@@ -1,27 +1,21 @@
-.LGG img {
-    height: auto;
-    max-width: 100%;
-    
-  }
+
+/* Set the color of the toggler icon to white */
+.navbar-toggler-icon {
+  color: white !important;
+  background-color: none;
   
-  .navbar-collapse {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Hide the menu initially */
-    width: 300px; /* Adj;ust menu width as needed */
-    height: 100%;
-    color:white; /* Adjust background color as needed */
-    transition: right 0.3s ease-in-out;
-     /* Add transition for smooth animation */
-  }
-  
-  .navbar-collapse.show {
-    right: 0; /* Show the menu from the right side */
-  }
-  
-  @media (max-width: 991.98px) {
-    .navbar-collapse {
-      width: 250px; /* Adjust menu width for smaller screens */
-    }
-  }
-  
+  background-color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-light .navbar-toggler {
+  background: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  cursor: pointer; 
+}

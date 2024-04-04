@@ -1,19 +1,10 @@
-import React from 'react'
-import './Footer.css'
-const Footer = () => {
+import React from 'react';
+function Footer() {
   return (
-    <div class="footer-cotainer">
-  <div class="footer-parent">
-  <img style={{"width":"100%"}}className='footer-image'src={require('../../../assets/Home/footerrr.avif')} alt='no internet connection'/>
-
-  </div>
-  </div>
-
-    )
+    <footer style={{"width":"100%","height":"30px"}} >
+        <p style={{"color":"white","fontSize":"25px","backgroundColor":"black","textAlign":"center","fontFamily":"initial"}}> Copyright &copy; 2024 by Lavina Guglani</p>
+    </footer>
+  );
 }
 
-export default Footer
-
-
-
-
+export default Footer;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Home/Navbar/Navbar';
-import './About.css'; // Import your CSS file for styling
-import about from './about.jpg'; // Import your profile picture
+import './About.css'; 
+import about from './about.jpg'; 
 import Footer from '../Home/Footer/Footer';
 
 const Aboutus = () => {
@@ -12,9 +12,12 @@ const Aboutus = () => {
       <div className="profile-pic-container">
             <img className="about" src={about} alt="about" />
           </div>
-
+<br/>
         <div className="about-heading-container">
-          <h1 className="about-heading">Hello I'm <strong style={{"color":'lightblue'}}>Lavina</strong>.</h1>
+          <h3 className="about-heading">Know Who I'M</h3>
+<h2 style={{"color":'lightblue',"fontSize":"30x"}}>Hi. I'm Lavina, nice to meet<br/> you. Please take a look around.
+
+</h2>.
         </div>
         <div className="about-content">
           <div className="text-container">
