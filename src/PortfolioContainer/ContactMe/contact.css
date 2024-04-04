@@ -1,0 +1,41 @@
+/* Contact.css */
+.form {
+  max-width: 600px; /* Set maximum width for form */
+  margin: 0 auto; /* Center align form */
+  padding: 20px; /* Add padding */
+}
+
+/* Make form inputs responsive */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Center align button */
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Make form responsive for smaller screens */
+@media screen and (max-width: 600px) {
+  .form {
+    padding: 10px;
+  }
+}

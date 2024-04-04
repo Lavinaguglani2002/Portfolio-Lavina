@@ -1,0 +1,124 @@
+/* Profile.css */
+
+/* Common styles */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.profile-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.colz-icon {
+  font-size: 60px; /* Increase icon size */
+}
+
+.fa-facebook {
+  color: #3b5998; /* Facebook blue */
+  margin: 15px;
+  font-size: 38px;
+}
+
+.fa-github{
+  color: gray; 
+  margin: 15px;
+  font-size: 38px;
+
+  /* Google red */
+}
+
+.fa-linkedin {
+  color: #0077b5;
+  margin: 15px;
+  font-size: 38px;
+
+  /* LinkedIn blue */
+}
+
+.fa-youtube-square {
+  color: #cd201f;
+  margin: 15px;
+  /* YouTube red */
+  font-size: 38px;
+
+}
+
+.fa-twitter {
+  color: #1da1f2;
+  margin: 15px;
+  font-size: 38px;
+
+  /* Twitter blue */
+}
+
+.primary-text {
+  color: white; /* Change text color to white */
+}
+
+.highlighted-text {
+  color: #ff5722;
+}
+
+.profile-details {
+  margin-right: 20px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.profile-text {
+  margin-bottom: 20px;
+}
+
+.profile-options .btn {
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  width: 120px;
+  height: 50px;
+}
+
+/* Profile picture */
+.profile-picture {
+  width: 350px; /* Increase width of the profile picture */
+  height: 420px; /* Increase height of the profile picture */
+  background-color: #ccc;
+  background-image: url('../../../assets/Home/Screenshot_20240323_221324_Snapchat.jpg'); /* Add your profile picture */
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #fff;
+  border-radius: 80%;
+  margin-top: 20px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .profile-parent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-details {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .profile-picture {
+    margin: 25px auto;
+    width: 450px; /* Adjust width for smaller screens */
+    height: 400px; /* Adjust height for smaller screens */
+  }
+}
