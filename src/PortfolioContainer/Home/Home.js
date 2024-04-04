@@ -9,7 +9,7 @@ const Home = () => {
         <Navbar/>
         <Profile/>
 
-<Footer/>
+{/* <Footer/> */}
     </div>
   )
 }
