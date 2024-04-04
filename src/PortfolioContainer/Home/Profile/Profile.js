@@ -3,7 +3,7 @@ import './Profile.css';
 
 const Profile = () => {
   const [text, setText] = useState('');
-  const  texts = [
+  const texts = [
     "MERN Stack Developer",
     "Enthusiastic dev",
     "Full Stack Developer",
@@ -14,7 +14,7 @@ const Profile = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setText(texts[index].substring(0, text.length + 1));
-    }, 100); 
+    }, 100);
 
     return () => clearInterval(interval);
   }, [text, index, texts]);
@@ -23,7 +23,7 @@ const Profile = () => {
     if (text === texts[index]) {
       setTimeout(() => {
         setIndex((index + 1) % texts.length);
-      }, 1000); 
+      }, 1000);
     }
   }, [text, index, texts]);
 
@@ -37,24 +37,21 @@ const Profile = () => {
           <a href="https://twitter.com/GuglaniLavina"><i className="fab fa-twitter"></i></a>
         </div>
         <div className="profile-text">
-          <h1 style={{"color":"yellow","fontSize":"50px","fontFamily":"inherit"}}>Hello, I'm <span className="highlighted-text">Lavina</span> <span role="img" aria-label="wave">👋</span></h1>
-          <h2 style={{color:"white"}}>{text}</h2>
-          <p style={{"color":"white","fontSize":"20px","fontFamily":"serif"}}>Knack of building applications with frontend and backend operations</p>
-          <p style={{"color":"white","fontSize":"20px"}}>
+          <h1 style={{ "color": "yellow", "fontSize": "50px", "fontFamily": "inherit" }}>Hello, I'm <span className="highlighted-text">Lavina</span> <span role="img" aria-label="wave">👋</span></h1>
+          <h2 style={{ color: "white" }}>{text}</h2>
+          <p style={{ "color": "white", "fontSize": "20px", "fontFamily": "serif" }}>Knack of building applications with frontend and backend operations</p>
+          <p style={{ "color": "white", "fontSize": "20px" }}>
             A web developer is a skilled professional responsible for designing, building,
-            and maintaining websites<br/> and web applications.
-            They possess expertise in various 
-            programming languages and frameworks,<br/> including HTML, CSS, JavaScript, and popular
+            and maintaining websites<br /> and web applications.
+            They possess expertise in various
+            programming languages and frameworks,<br /> including HTML, CSS, JavaScript, and popular
             libraries like React and Angular.
           </p>
           <div className="profile-options">
-            <a href="Lavina Guglani resume.pdf" download="Lavina Guglani resume.pdf">
-            <button style={{ width: "150px" }} className="btn highlighted-btn">
-  <a href="/Project" style={{ color: "inherit", textDecoration: "none" }}>View Projects</a>
-</button>
-
-              <button style={{"width":"150px"}}className="btn highlighted-btn">Get Resume</button>
-            </a>
+            <div className="btn-container">
+              
+              <button style={{ "width": "150px" }} className="btn highlighted-btn">Get Resume</button>
+            </div>
           </div>
         </div>
 
