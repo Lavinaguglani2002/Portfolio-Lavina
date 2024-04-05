@@ -13,7 +13,7 @@ const Contact = () => {
             <i style={{  "color": "#D93025" ,"width":"40px","height":"40px"}}className='fa fa-envelope email-icon'></i>
         </div>
         <h1 style={{ "color": 'white' }}> Direct Contact </h1>
-        <form action="https://formsubmit.co/lavinaguglani456@gmail.com" method="POST">
+        <form action="https://formsubmit.co/lavinaguglani456@gmail.com" method="POST" style={{"textAlign":"center"}}>
           <input type="text" name="name" placeholder='Name' />
           <input type="email" name="email" placeholder='Email' />
           <input type='text' name="subject" placeholder='Subject' />
@@ -23,6 +23,8 @@ const Contact = () => {
           <button type='submit'>Submit</button>
         </form>
       </div>
+      <br/>
+      <br/>
       <br/>
       <br/>
       <br/>

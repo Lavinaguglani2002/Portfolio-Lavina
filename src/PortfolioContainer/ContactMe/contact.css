@@ -1,4 +1,5 @@
 /* Contact.css */
+
 .form {
   max-width: 600px; /* Set maximum width for form */
   margin: 0 auto; /* Center align form */
@@ -10,8 +11,8 @@ input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 12px; /* Increase padding for better touch experience */
+  margin-bottom: 15px; /* Increase margin for better spacing */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box; /* Include padding and border in width */
@@ -19,12 +20,13 @@ textarea {
 
 button[type="submit"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increase padding for better touch experience */
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
 }
 
 /* Center align button */
@@ -33,9 +35,23 @@ button[type="submit"] {
   margin: 0 auto;
 }
 
+/* Hover effect on submit button */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
 /* Make form responsive for smaller screens */
 @media screen and (max-width: 600px) {
   .form {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  /* Decrease padding and margin for inputs and button on smaller screens */
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button[type="submit"] {
     padding: 10px;
+    margin-bottom: 10px;
   }
 }
