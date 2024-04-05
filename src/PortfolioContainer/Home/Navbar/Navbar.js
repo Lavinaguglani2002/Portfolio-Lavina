@@ -16,7 +16,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-sm navbar-light bg-darkblue">
         <div className="container-fluid">
-          <img src={LOGOO} style={{"width":"100px","height":"110px","background":"none"}} alt="logo"/>
+          <img src={LOGOO} style={{"width":"100px","height":"100px","background":"none","backgroundColor":"none","textDecoration":"none"}} alt="logo"/>
          
           <button style={{"color":"white !important","height":"90px","width":"100px",}} className="navbar-toggler" type="button" onClick={toggleMenu}>
             <span style={{"color":"white !important","fontSize":"30px"}} className="navbar-toggler-icon"></span>

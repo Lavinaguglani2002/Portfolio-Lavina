@@ -48,10 +48,9 @@ const Profile = () => {
             libraries like React and Angular.
           </p>
           <div className="profile-options">
-            <div className="btn-container">
-              
-              <button style={{ "width": "150px" }} className="btn highlighted-btn">Get Resume</button>
-            </div>
+            <a href="Lavina Guglani resume.pdf" download="Lavina Guglani resume.pdf">
+              <button style={{"width":"150px"}}className="btn highlighted-btn">Get Resume</button>
+            </a>
           </div>
         </div>
 

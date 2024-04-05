@@ -23,6 +23,12 @@ const Contact = () => {
           <button type='submit'>Submit</button>
         </form>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <Footer />
     </div>
   );
