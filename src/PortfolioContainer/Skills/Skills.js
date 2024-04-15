@@ -85,7 +85,7 @@ export const Skills = () => {
       </div>
 
       <div className="card" style={{ "width": "15rem" }}>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" className="card-img-top" alt="..." />
+<img src="https://www.svgrepo.com/show/303251/mysql-logo.svg"/>
         <div className="card-body">
           <h5 className="card-title ">My Sql</h5>
           <a href="https://www.w3schools.com/mysql/mysql_intro.asp" className="btn btn-primary">Read It</a>
