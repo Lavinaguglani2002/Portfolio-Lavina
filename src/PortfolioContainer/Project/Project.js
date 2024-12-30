@@ -82,6 +82,8 @@ const Project = () => {
               <div className="card-body">
                 <h5 className="card-title">Description: Ecommerce Website using Mern Stack</h5>
                 <a href="https://github.com/Lavinaguglani2002/Watch-Ecommerce-Website.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
+                <a href="https://ecom-watches.vercel.app/" className="btn btn-green" style={{"width":"120px"}}>Live Demo</a>
+
               </div>
             </div>
 </div>

@@ -50,7 +50,7 @@ const Profile = () => {
           <div className="profile-options">
             <a href="Lavina___Guglani_Final_Year_Resume.pdf" download="Lavina___Guglani_Final_Year_Resume.pdf">
               <button style={{"width":"150px"}}className="btn highlighted-btn">Get Resume</button>
-            </a>
+            </a>c
           </div>
         </div>
 
