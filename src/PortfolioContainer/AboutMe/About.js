@@ -25,16 +25,22 @@ const Aboutus = () => {
               I am a Final-Year Computer Science and Engineering Student from Giani Zail Singh Campus College of Engineering and Technology, Maharaja Ranjit Singh Punjab Technical University, Bathinda<strong style={{"color":'lightblue'}}>(2k21-2k25)</strong>.
             </p>
             <p>
-              I am passionate about exploring different web technologies and enhancing my skills by building projects. I'm currently learning Python, a programming language. I'm excited about exploring its possibilities in software development and data analysis.
+              I am passionate about exploring different web technologies and enhancing my skills by building projects. 
             </p>
 
 <p>I have worked as <strong style={{"color":"lightblue"}}>Web Development intern at Potencia Academy for 2 months</strong>(from April 2023-July 2023) and learnt a lot of practical knowledge about the tech industry.</p>
-<p>
-              Currently
-              , I am seeking an internship opportunity in the field of Web Development to further refine my skills and gain practical experience in real-world projects.
-            </p>
+<p>I have completed a <strong style={{"color":"lightblue"}}>MERN</strong> stack training at <strong style={{"color":"lightblue"}}>Think Next Private Limited </strong>from July 2023 to August 2023, where I strengthened my knowledge of full-stack development.
+
+</p>
+<p>I also did a one-month internship at <strong style={{"color":"lightblue"}}>Bharat Intern</strong> from December 2023 to January 2024, which helped me refine my skills further.
+
+</p>
+
             <p>I have recently worked as Information Technology Intern at <strong style={{"color":"lightblue"}}>Trident Group India,Ludhiana </strong>where I gained valuable experience and exploring different skills such as Power Apps,SharePoint.</p>
            <p>Now I am interning at  <strong style={{"color":"lightblue"}}>VerveBridge </strong> in remote mode where I have worked on varioud Projects.</p>
+            <p>Currently, I am interning at <strong style={{"color":"lightblue"}}>Unified Mentor</strong> as a Web Development Intern, where I am working on projects that enhance my technical expertise.
+
+</p>
             <p>My main Aim is to become a Successful Web Developer.</p>
           </div>
         </div>

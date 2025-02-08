@@ -36,7 +36,8 @@ const Navbar = () => {
                 <a style={{ "color": "white", "fontSize": "30px", "marginRight": "20px" }} className="nav-link" href="/project"><i class="fas fa-project-diagram"></i> Project</a>
               </li>
               <li className="nav-item" onClick={closeMenu}>
-                <a style={{ "color": "white", "fontSize": "30px", "marginRight": "20px" }} className="nav-link" href="/contact"><i className="fa fa-user"></i> Contact</a>
+                <a style={{ "color": "white", "fontSize": "30px", "marginRight": "20px" }}
+                 className="nav-link" href="/contact"><i className="fa fa-user"></i> Contact</a>
               </li>
             </ul>
           </div>

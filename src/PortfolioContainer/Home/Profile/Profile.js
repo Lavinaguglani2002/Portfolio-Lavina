@@ -37,7 +37,8 @@ const Profile = () => {
           <a href="https://twitter.com/GuglaniLavina"><i className="fab fa-twitter"></i></a>
         </div>
         <div className="profile-text">
-          <h1 style={{ "color": "yellow", "fontSize": "50px", "fontFamily": "inherit" }}>Hello, I'm <span className="highlighted-text">Lavina</span> <span role="img" aria-label="wave">👋</span></h1>
+          <h1 style={{ "color": "yellow", "fontSize": "50px", "fontFamily": "inherit" }}>Hello, I'm
+             <span className="highlighted-text">Lavina</span> <span role="img" aria-label="wave">👋</span></h1>
           <h2 style={{ color: "white" }}>{text}</h2>
           <p style={{ "color": "white", "fontSize": "20px", "fontFamily": "serif" }}>Knack of building applications with frontend and backend operations</p>
           <p style={{ "color": "white", "fontSize": "20px" }}>
