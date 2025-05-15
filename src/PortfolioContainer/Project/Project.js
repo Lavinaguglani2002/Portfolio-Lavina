@@ -8,6 +8,8 @@ import health from './health.jpg'
 import Footer from '../Home/Footer/Footer';
 import ecommerce from "./ecommerce.png"
 import restaurant from "./restaurant.png"
+import Handihud from "./Handihud.png"
+
 
 const Project = () => {
   return (
@@ -16,6 +18,18 @@ const Project = () => {
       <div className="container">
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div className="col">
+            <div className="card">
+              <img src={Handihud} className="card-img-top" alt="Register Form" style={{height: "230px"}} />
+              <div className="card-body">
+                <h5 className="card-title">Description: Service Website an Outdoor using Mern Stack</h5>
+                <a href="https://github.com/Lavinaguglani2002/Services-Final-Project.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
+                <a href="https://services-final-project-a7h.vercel.app" className="btn btn-green" style={{"width":"120px"}}>Live Demo</a>
+
+              </div>
+            </div>
+</div>
+
         <div className="col">
             <div className="card">
               <img src={restaurant} className="card-img-top" alt="Money Tracker App" style={{height: "230px"}} />
@@ -87,6 +101,7 @@ const Project = () => {
               </div>
             </div>
 </div>
+
                </div>
       </div>
       <Footer/>

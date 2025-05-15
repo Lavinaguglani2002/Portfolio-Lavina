@@ -30,7 +30,7 @@ export const Skills = () => {
         </div>
       </div>
       <div className="card" style={{ "width": "15rem" }}>
-        <img src="https://play-lh.googleusercontent.com/s4AnA0RrLKhVMKDBSBTjNvPBBK2wQk3-4ZP2RONGxK_VqnMNXWTmPy-6f8J64GxDgyU" className="card-img-top" alt="..." />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ4qe-TiNdb7kONl0a1C3a1R3H9TPWKSJeGg&s" className="card-img-top" alt="..."/>
         <div className="card-body">
           <h5 className="card-title">JavaScript</h5>
           <a href="https://www.w3schools.com/js/" className="btn btn-primary">Read It</a>
