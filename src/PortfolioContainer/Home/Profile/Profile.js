@@ -49,7 +49,7 @@ const Profile = () => {
             libraries like React and Angular.
           </p>
           <div className="profile-options">
-            <a href="/Lavina_Guglani_CSEE_Final_Resume.pdf" download="Lavina_Guglani_Resume.pdf">
+<a href="/Lavina__Guglani14__Resume .pdf" download="Lavina__Guglani14__Resume .pdf">
   <button style={{ width: "150px" }} className="btn highlighted-btn">
     Get Resume
   </button>
