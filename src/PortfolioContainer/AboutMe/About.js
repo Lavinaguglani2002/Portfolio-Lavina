@@ -22,6 +22,9 @@ const Aboutus = () => {
           <div className="text-container">
             <p style={{"color":"skyblue"}}>I’m currently working as a Lecturer at Giani Zail Singh Campus College of Engineering and Technology, where I joined in August 2025 and deliver lectures in the Computer Science and Engineering department.
             </p>
+            <p style={{"color":"skyblue"}}>
+Currently, I am also doing an internship at <strong>Amdox Technologies</strong>, where I am gaining hands-on experience and enhancing my practical skills in the tech industry.
+</p>
             <p style={{"color":"white"}}>
 I have completed my B.Tech in Computer Science and Engineering from Giani Zail Singh Campus College of Engineering and Technology (MRSPTU), Bathinda (2k21–2k25).
             </p>
