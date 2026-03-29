@@ -1,6 +1,5 @@
 import React from 'react';
 import money from "./money.jpg";
-import registerform from "./registerform.jpg";
 import Navbar from '../Home/Navbar/Navbar';
 import grocery from "./grocery.jpg"
 import yatra from "./yatra.jpg"
@@ -23,8 +22,8 @@ const Project = () => {
               <img src={Handihud} className="card-img-top" alt="Register Form" style={{height: "230px"}} />
               <div className="card-body">
                 <h5 className="card-title">Description: Service Website an Outdoor using Mern Stack</h5>
-                <a href="https://github.com/Lavinaguglani2002/Services-Final-Project.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
-                <a href="https://services-final-project-a7h.vercel.app" className="btn btn-green" style={{"width":"120px"}}>Live Demo</a>
+                <a href="https://github.com/Lavinaguglani2002/Klavya-smart-serve.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
+                <a href="https://klavya-smart-serve.vercel.app" className="btn btn-green" style={{"width":"120px"}}>Live Demo</a>
 
               </div>
             </div>
@@ -34,8 +33,8 @@ const Project = () => {
             <div className="card">
               <img src={restaurant} className="card-img-top" alt="Money Tracker App" style={{height: "230px"}} />
               <div className="card-body">
-                <h5 className="card-title">Description: Restaurant Website using Mern Stack</h5>
-                <a href="https://github.com/Lavinaguglani2002/Hotel.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
+                <h5 className="card-title">Description: Hostel Management using Mern Stack</h5>
+                <a href="https://github.com/Lavinaguglani2002/Hostel-management-1.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
               </div>
             </div>
           </div>
@@ -83,20 +82,11 @@ const Project = () => {
    
           <div className="col">
             <div className="card">
-              <img src={registerform} className="card-img-top" alt="Register Form" style={{height: "230px"}} />
-              <div className="card-body">
-                <h5 className="card-title">Description: Registration Form using Mern Stack</h5>
-                <a href="https://github.com/Lavinaguglani2002/Register-mern-stack-form" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
               <img src={ecommerce} className="card-img-top" alt="Register Form" style={{height: "230px"}} />
               <div className="card-body">
                 <h5 className="card-title">Description: Ecommerce Website using Mern Stack</h5>
-                <a href="https://github.com/Lavinaguglani2002/Watch-Ecommerce-Website.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
-                <a href="https://ecom-watches.vercel.app/" className="btn btn-green" style={{"width":"120px"}}>Live Demo</a>
+                <a href="https://github.com/Lavinaguglani2002/Ecom-watches.git" className="btn btn-primary" style={{"width":"120px"}}>View Code</a>
+                <a href="https://ecom-watches.vercel.app" className="btn btn-green" style={{"width":"120px"}}>Live Demo</a>
 
               </div>
             </div>
