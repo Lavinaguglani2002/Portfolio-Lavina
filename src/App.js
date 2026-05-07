@@ -11,7 +11,7 @@ import Project from './PortfolioContainer/Project/Project';
 
 
 function App() {
-    const [theme, setTheme] = useState('light'); // Define 'theme' and set default value
+    const [theme] = useState('light');
   
   return (
     <div  id={theme}>
