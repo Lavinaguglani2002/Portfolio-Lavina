@@ -1,0 +1,116 @@
+.project-wrapper {
+  background: linear-gradient(135deg, #020024, #090979, #000000);
+  min-height: 100vh;
+  padding: 100px 5% 50px;
+}
+
+.project-title {
+  color: #ffcc00;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.custom-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 15px !important;
+  overflow: hidden;
+  transition: 0.4s ease;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffcc00 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+  border-bottom: 2px solid rgba(255, 204, 0, 0.3);
+  object-fit: cover;
+}
+
+.card-body {
+  color: white;
+  padding: 20px !important;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  min-height: 50px; /* Text alignment ke liye */
+}
+
+.btn-group-custom {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-code {
+  background: transparent;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  font-weight: 600;
+  flex: 1;
+}
+
+.btn-code:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+.btn-live {
+  background: #38bdf8;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  flex: 1;
+}
+
+.btn-live:hover {
+  background: #7dd3fc;
+}
+/* Responsive - Mobile View Fix */
+@media screen and (max-width: 992px) {
+  .profile-parent {
+    /* 'column-reverse' ko hata kar 'column' kiya hai */
+    flex-direction: column; 
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Saara text mobile par center ho jayega */
+    order: 1; /* Text upar rahega */
+  }
+
+  .profile-picture {
+    order: 2; /* Photo text ke niche aayegi */
+    width: 280px; /* Mobile par thodi choti photo better lagti hai */
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    justify-content: center; /* Icons middle mein rahenge */
+  }
+
+  .main-heading {
+    font-size: 35px; /* Mobile par heading choti kar di */
+  }
+
+  .role-text {
+    font-size: 24px;
+  }
+
+  .short-desc {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
