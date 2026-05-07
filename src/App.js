@@ -11,8 +11,8 @@ import Project from './PortfolioContainer/Project/Project';
 
 
 function App() {
-    const [theme] = useState('light');
-  
+
+  const [theme] = useState('light');
   return (
     <div  id={theme}>
     <ToastContainer />
