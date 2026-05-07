@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc52e8a6.css",
+    "main.css": "/static/css/main.b272ec03.css",
     "main.js": "/static/js/main.e1702eef.js",
     "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
     "static/media/Lavinapic.jpg": "/static/media/Lavinapic.1c254d52e914064c85a3.jpg",
@@ -13,12 +13,12 @@
     "static/media/about.jpg": "/static/media/about.0da913696ccff1ef2d03.jpg",
     "static/media/money.jpg": "/static/media/money.51002e8293acd86e42d0.jpg",
     "index.html": "/index.html",
-    "main.cc52e8a6.css.map": "/static/css/main.cc52e8a6.css.map",
+    "main.b272ec03.css.map": "/static/css/main.b272ec03.css.map",
     "main.e1702eef.js.map": "/static/js/main.e1702eef.js.map",
     "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc52e8a6.css",
+    "static/css/main.b272ec03.css",
     "static/js/main.e1702eef.js"
   ]
 }
