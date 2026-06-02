@@ -1,11 +1,17 @@
 .profile-container {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, #020024, #090979, #000000);
+  /* Match with Projects Page Background Theme */
+  background-color: #0b0f19;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(30, 27, 75, 0.4) 0px, transparent 80%);
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 100px 20px 40px 20px; /* Top padding added for navbar */
   overflow: hidden;
 }
 
@@ -21,29 +27,34 @@
 /* LEFT SECTION */
 .profile-details {
   flex: 1;
-  color: white;
+  color: #f8fafc;
 }
 
 .main-heading {
   font-size: 55px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
+/* Yellow se change karke premium White/Indigo text gradient */
 .highlighted-text {
-  color: #ffcc00;
+  background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .role-text {
   font-size: 32px;
   font-weight: 600;
-  color: #38bdf8;
+  color: #38bdf8; /* Sleek Cyan color */
   height: 45px;
   margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
 .cursor {
-  color: #ffcc00;
+  color: #38bdf8;
   animation: blink 0.8s infinite;
 }
 
@@ -54,12 +65,12 @@
 .short-desc {
   font-size: 18px;
   line-height: 1.6;
-  color: #d1d5db;
+  color: #94a3b8; /* Soft muted text color */
   max-width: 550px;
   margin-bottom: 30px;
 }
 
-/* SOCIAL ICONS - Middle Alignment Fix */
+/* SOCIAL ICONS - Modernized */
 .social-icons {
   display: flex;
   align-items: center;
@@ -71,53 +82,60 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social-icons a i {
   font-size: 22px;
-  color: white;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
 }
 
+/* Yellow hover effect changed to premium Indigo/Neon */
 .social-icons a:hover {
   transform: translateY(-5px);
-  background: #ffcc00;
+  background: rgba(99, 102, 241, 0.2);
+  border-color: #6366f1;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
 }
 
 .social-icons a:hover i {
-  color: #000;
+  color: #ffffff;
 }
 
-/* BUTTON DESIGN - Complete Fill Look */
+/* BUTTON DESIGN - Neon Glow Look */
 .profile-options {
   margin-top: 20px;
 }
 
+/* Button changed from Yellow/Orange to Cyan/Blue Gradient */
 .highlighted-btn {
-  background: linear-gradient(135deg, #ffcc00, #ff9800);
-  color: #000;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  color: #ffffff;
   padding: 14px 35px;
   border: none;
   border-radius: 50px;
   font-size: 17px;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3);
-  min-width: 200px; /* Isse button complete aur solid dikhega */
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+  min-width: 200px;
 }
 
 .highlighted-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(255, 204, 0, 0.5);
+  box-shadow: 0 12px 25px rgba(6, 182, 212, 0.5);
+  background: linear-gradient(135deg, #0891b2 0%, #2563eb 100%);
 }
 
-/* PROFILE IMAGE */
+/* PROFILE IMAGE - Glow matching the new theme */
 .profile-picture {
   width: 380px;
   height: 380px;
@@ -125,8 +143,8 @@
   background-image: url('../../../assets/Home/Lavinapic.jpg');
   background-size: cover;
   background-position: center;
-  border: 6px solid #ffcc00;
-  box-shadow: 0 0 30px rgba(255, 204, 0, 0.3);
+  border: 5px solid rgba(99, 102, 241, 0.6); /* Purple border border */
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.3); /* Purple neon glow */
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -135,7 +153,7 @@
   50% { transform: translateY(-15px); }
 }
 
-/* RESPONSIVE - For Center Alignment on Mobile */
+/* RESPONSIVE */
 @media screen and (max-width: 992px) {
   .profile-parent {
     flex-direction: column-reverse;
@@ -155,4 +173,71 @@
   .short-desc {
     max-width: 100%;
   }
+
+  .profile-picture {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* 🚀 THE ULTIMATE CYBERPUNK AURORA BACKGROUND */
+.project-page-bg, .profile-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #05050a; /* Ultra Deep Outer-Space Black */
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+/* Layer 1: Futuristic Laser Grid */
+.project-page-bg::before, .profile-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Layer 2: Moving Cyber Aurora Blurs (Yeh real magic karega) */
+.project-page-bg::after, .profile-container::after {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 30% 40%, rgba(6, 182, 212, 0.22) 0%, transparent 30%), /* Neon Cyan */
+    radial-gradient(circle at 70% 60%, rgba(236, 72, 153, 0.18) 0%, transparent 35%), /* Cyber Pink */
+    radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.25) 0%, transparent 40%); /* Electric Indigo */
+  
+  /* Background shifting animation */
+  animation: auroraFlow 25s linear infinite;
+}
+
+/* Fluid Animation for Background */
+@keyframes auroraFlow {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Taaki content background ke piche na chhup jaye */
+.project-wrapper, .profile-parent {
+  position: relative;
+  z-index: 2; 
 }

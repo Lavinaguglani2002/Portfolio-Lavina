@@ -169,7 +169,7 @@ const Profile = () => {
             </p>
 
             <div className="profile-options">
-              <a href="/Lavinaguglani2002_final_resume.pdf" download>
+              <a href="/Lavinaaguglanii_final_resume.pdf" download>
                 <button className="highlighted-btn">
                   Download Resume
                 </button>

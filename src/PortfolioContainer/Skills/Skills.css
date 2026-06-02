@@ -1,82 +1,160 @@
+/* 🚀 SKILLS SECTION - MATCHING CYBERPUNK AURORA THEME */
 .skills-wrapper {
   min-height: 100vh;
-  padding: 100px 10%;
-  background: linear-gradient(135deg, #020024, #090979, #000000);
+  padding: 120px 10% 60px; /* Top padding adjusted for clean navbar spacing */
+  background-color: #05050a; /* Same ultra deep space black */
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
   text-align: center;
 }
 
+/* Layer 1: Futuristic Laser Grid */
+.skills-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Layer 2: Moving Cyber Aurora Blurs */
+.skills-wrapper::after {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 20% 40%, rgba(6, 182, 212, 0.22) 0%, transparent 30%), /* Neon Cyan */
+    radial-gradient(circle at 80% 60%, rgba(236, 72, 153, 0.18) 0%, transparent 35%), /* Cyber Pink */
+    radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.25) 0%, transparent 40%); /* Electric Indigo */
+  animation: auroraFlow 25s linear infinite;
+}
+
+/* Ensuring content layers properly above the background animation */
+.skills-title, .skills-subtitle, .skills-grid {
+  position: relative;
+  z-index: 2;
+}
+
+/* --- HEADER STYLING --- */
+/* Converted from solid yellow to an eye-catching white-to-cyan gradient */
 .skills-title {
-  color: #ffcc00;
-  font-size: 45px;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #ffffff 40%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(6, 182, 212, 0.25);
 }
 
 .skills-subtitle {
-  color: #d1d5db;
-  margin-bottom: 50px;
-  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
 }
 
+/* --- SKILLS GRID & CARDS --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
   justify-items: center;
 }
 
-/* Custom Skill Card */
+/* Custom Skill Card - Modern Dark Matte Finish */
 .skill-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.45) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
   border-radius: 20px;
-  padding: 30px;
+  padding: 35px 25px;
   width: 100%;
-  max-width: 220px;
-  transition: all 0.4s ease;
+  max-width: 240px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Futuristic Neon Hover Effect */
 .skill-card:hover {
   transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.1);
-  border-color: #ffcc00;
-  box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
+  background: rgba(30, 41, 59, 0.8) !important;
+  border-color: rgba(6, 182, 212, 0.5) !important; /* Cyan border pop */
+  box-shadow: 0 15px 35px rgba(6, 182, 212, 0.15), 0 0 15px rgba(99, 102, 241, 0.1);
 }
 
+/* Image/Icon Micro-Interaction */
 .skill-card img {
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  transition: transform 0.4s ease;
+}
+
+/* Icon rotates slightly or scales up on hover */
+.skill-card:hover img {
+  transform: scale(1.1) rotate(3deg);
 }
 
 .skill-card h5 {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
+/* --- INTERACTIVE READ/LEARN BUTTON --- */
+/* Changed yellow look into premium outline cyan link button */
 .read-btn {
   text-decoration: none;
-  color: #ffcc00;
-  font-size: 14px;
+  color: #06b6d4 !important;
+  font-size: 0.9rem;
   font-weight: 600;
-  border: 1px solid #ffcc00;
-  padding: 8px 20px;
+  border: 1px solid rgba(6, 182, 212, 0.3) !important;
+  padding: 8px 24px;
   border-radius: 30px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  background: transparent;
 }
 
 .read-btn:hover {
-  background: #ffcc00;
-  color: black;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+  transform: translateY(-1px);
 }
 
+/* --- RESPONSIVE STYLING --- */
 @media screen and (max-width: 600px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-card {
+    padding: 25px 15px;
+  }
+  
+  .skill-card img {
+    width: 60px;
+    height: 60px;
   }
 }

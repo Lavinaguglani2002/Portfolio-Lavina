@@ -1,116 +1,187 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ==========================================================================
+   🌐 NEXT-LEVEL CYBERPUNK FLOATING NAVBAR (UPGRADED SIZE & BACKGROUND)
+   ========================================================================== */
 .custom-navbar {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(10px);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px; /* 🔼 Height ko badha kar ekdam premium aur spacious look diya hai */
+  
+  /* Super Advanced Translucent Cyber-Dark Blend */
+  background: linear-gradient(
+    180deg, 
+    rgba(8, 8, 16, 0.75) 0%, 
+    rgba(5, 5, 10, 0.55) 100%
+  ) !important;
+  
+  /* Intense Premium Glass Blur */
+  backdrop-filter: blur(20px) saturate(180%); 
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  
+  /* Neon Micro-Border Accent */
+  border-bottom: 1px solid rgba(6, 182, 212, 0.12);
+  
+  /* Premium Soft Shadow to separate from content */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  
+  display: flex;
+  align-items: center;
   z-index: 1000;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Inner Layout Container */
 .nav-container {
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
-  padding: 15px 30px;
-
+  max-width: 1300px; /* Thoda aur spacious layout grid */
+  margin: 0 auto;
+  padding: 0 40px; /* Left-Right padding increased */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-img {
-  width: 90px;
-  height: 70px;
-  object-fit: contain;
+/* --- LOGO SECTION --- */
+.logo-section {
+  display: flex;
+  align-items: center;
 }
 
+.logo-img {
+  height: 56px; /* 🔼 Logo size bada kiya hai crisp view ke liye */
+  width: auto;
+  object-fit: contain;
+  /* Cyber Neon Glow around Logo */
+  filter: drop-shadow(0 0 12px rgba(6, 182, 212, 0.4)); 
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-img:hover {
+  transform: scale(1.08) rotate(-1deg); /* Subtle playful interactive tilt */
+}
+
+/* --- NAV LINKS LAYOUT (DESKTOP) --- */
 .nav-links {
   display: flex;
+  align-items: center;
+  gap: 40px; /* 🔼 Links ke beech ka gap badha diya hai clear spacing ke liye */
   list-style: none;
-  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  transition: 0.3s;
+.nav-links li {
   position: relative;
 }
 
-.nav-links li a i {
-  margin-right: 8px;
+.nav-links a {
+  text-decoration: none !important;
+  color: #e2e8f0 !important; /* Richer high-contrast silver-white text */
+  font-size: 1.1rem; /* 🔼 Font size ko bada kiya hai readability ke liye */
+  font-weight: 600; /* Bold and Premium typography */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between font-awesome icon and text */
+  padding: 10px 4px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #00d9ff;
+/* Elegant Icon Styling inside Links */
+.nav-links a i {
+  font-size: 1.05rem; /* 🔼 Icons also slightly bigger */
+  color: #94a3b8;
+  transition: all 0.3s ease;
 }
 
-.nav-links li a::after {
+/* --- INTERACTIVE NEON GLOW HOVER EFFECTS --- */
+.nav-links a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.4); /* Text turns slightly glowing */
+}
+
+.nav-links a:hover i {
+  color: #06b6d4; /* Icon turns Electric Cyan */
+  transform: translateY(-2px); /* Icon bounces slightly up */
+}
+
+/* Premium Cyan-to-Pink Laser Underline Animation */
+.nav-links li::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0%;
-  height: 2px;
-  background: #00d9ff;
-  transition: 0.3s;
+  bottom: -4px;
+  left: 50%; /* Starts from center for a premium bloom effect */
+  width: 0;
+  height: 3px; /* Slightly thicker laser line */
+  background: linear-gradient(90deg, #06b6d4 0%, #ec4899 100%);
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.8);
 }
 
-.nav-links li a:hover::after {
+.nav-links li:hover::after {
   width: 100%;
+  left: 0;
 }
 
-/* MENU ICON */
-
+/* --- MODERN MOBILE HAMBURGER ICON --- */
 .menu-icon {
   display: none;
-  color: white;
-  font-size: 30px;
+  font-size: 28px; /* Big & easy to tap */
+  color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* MOBILE VIEW */
+.menu-icon:hover {
+  color: #06b6d4;
+  transform: scale(1.1);
+}
 
-@media screen and (max-width: 768px) {
-
+/* --- ADVANCED MOBILE DROPDOWN DRAWERS --- */
+@media screen and (max-width: 900px) { /* Increased breakpoint to keep layout safe */
   .menu-icon {
     display: block;
   }
 
+  /* Full Screen Side Overlay Panel */
   .nav-links {
-    position: absolute;
-    top: 90px;
-    left: -100%;
-    width: 100%;
-    background: #111;
-
+    position: fixed;
+    top: 88px; /* Matches navbar height perfectly */
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - 88px);
+    
+    /* Solid High-End Dark Matte Acrylic Panel */
+    background: rgba(10, 10, 18, 0.96) !important;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    
+    border-left: 1px solid rgba(6, 182, 212, 0.15);
     flex-direction: column;
-    text-align: center;
-    padding: 30px 0;
-
-    transition: 0.4s ease;
-    gap: 25px;
+    align-items: flex-start;
+    padding: 50px 40px;
+    gap: 30px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
   }
 
+  /* Active Sidebar State */
   .nav-links.active {
-    left: 0;
+    right: 0;
   }
 
-  .nav-links li a {
-    font-size: 22px;
+  .nav-links a {
+    font-size: 1.25rem; /* Large and luxury readable links for phones */
+    width: 100%;
   }
 
-  .logo-img {
-    width: 75px;
-    height: 60px;
+  .nav-links li {
+    width: 100%;
+  }
+  
+  .nav-links li::after {
+    bottom: -2px;
   }
 }
