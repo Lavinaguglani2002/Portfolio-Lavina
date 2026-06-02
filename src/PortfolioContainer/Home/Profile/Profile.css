@@ -241,3 +241,45 @@
   position: relative;
   z-index: 2; 
 }
+/* Mobile responsive styling */
+@media screen and (max-width: 768px) {
+  .profile-parent {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+
+  .profile-picture {
+    margin-bottom: 20px; /* Text aur photo ke beech thoda gap rakhne ke liye */
+  }
+}
+/* Mobile responsive styling (768px ya usse choti screens ke liye) */
+@media screen and (max-width: 768px) {
+  .profile-parent {
+    display: flex !important;
+    flex-direction: column !important; /* Isse text pehle aayega, photo niche chali jayegi */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: auto;
+    padding: 20px 0;
+  }
+
+  .profile-details {
+    width: 100%;
+    order: 1; /* Forcefully text ko pehle number par rakhega */
+  }
+
+  .profile-picture {
+    width: 250px;       /* Mobile ke hisab se photo ka size tweak karne ke liye */
+    height: 250px;      
+    order: 2;           /* Forcefully photo ko dusre number (niche) par rakhega */
+    margin-top: 30px;   /* Text aur photo ke beech thoda spacing dene ke liye */
+    margin-bottom: 20px;
+  }
+}
